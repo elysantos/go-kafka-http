@@ -3,8 +3,8 @@ package usecase
 import "github.com/elysantos/go-api-messages/internal/entity"
 
 type CreateProductRequest struct {
-	Name  string
-	Price float64
+	Name  string  `json:"name"`
+	Price float64 `json:"price"`
 }
 
 type CreateProductResponse struct {
